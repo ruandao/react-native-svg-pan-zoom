@@ -23,13 +23,17 @@ export default class ResponderElement extends Component {
                 this.releasedNaturally = true;
             }
         }}>
-        {this.props.children}
-      </GView>);
+                {this.props.children}
+            </GView>);
     }
 }
 ResponderElement.defaultProps = {
-    onClick: (evt) => { },
-    onClickRelease: (evt) => { },
-    onClickCanceled: (evt) => { },
-    onDrag: (evt) => { }
+    onClick: (evt) => {
+    },
+    onClickRelease: (evt) => {
+    },
+    onClickCanceled: (evt) => {
+    },
+    onDrag: (evt) => {
+    }
 };

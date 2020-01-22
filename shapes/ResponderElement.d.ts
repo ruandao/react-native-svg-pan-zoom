@@ -1,12 +1,13 @@
 /// <reference types="react" />
 import { Component } from 'react';
+import { GestureResponderEvent } from "react-native";
 export interface Props {
     x: number;
     y: number;
-    onClick?: (evt: any) => void;
-    onClickRelease?: (evt: any) => void;
-    onClickCanceled?: (evt: any) => void;
-    onDrag?: (evt: any) => void;
+    onClick?: (evt: GestureResponderEvent) => void;
+    onClickRelease?: (evt: GestureResponderEvent) => void;
+    onClickCanceled?: (evt: GestureResponderEvent) => void;
+    onDrag?: (evt: GestureResponderEvent) => void;
 }
 export interface State {
 }
